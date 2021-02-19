@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../Projektarbete/WebShop-Bootstrap/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <title>WebShop</title>
+  <title>Bokhandel</title>
   <style>
         img {
             width: 50%;
@@ -37,10 +37,10 @@ $result = $stmt->fetchAll();
 echo "<div class='row'>";
 
 foreach($result as $key => $value){
-$id = $value['product_id'];  // Detta är en primärnyckel
+$id = $value['product_id']; 
 
 $html = "
-          <div class='col-lg-4 col-md-6 mb-4'>
+          <div class='col-lg-4 col-md-6 mb-4' style = 'padding-top:80px'>
             <div class='card h-100'>
               <a href='#'><img class='card-img-top' src='' alt=''></a>
               <div class='card-body'>
@@ -56,16 +56,15 @@ $html = "
               <a href='buy/index.php?product_id=$id' target='_blank' class='btn btn-primary btn-lg' role='button'>Köp</a>
               </div>
             </div>    
-    </div>";
+          </div>";
     
 echo $html;
 }
+
 ?>
-
-
 <hr>
 <footer class="text-center text-muted">
- Copyright &copy; Olga Domorod & Jovana Hurra <?php echo date('Y'); ?>
+         Copyright &copy; Olga Domorod & Jovana Hurra <?php echo date('Y'); ?>
 </footer>
 
 </body>

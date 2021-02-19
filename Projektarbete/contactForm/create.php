@@ -24,6 +24,6 @@
   <input type="submit" value="Skicka meddelandet" class="form-control btn btn-outline-dark">
 
 </div>
-</form>
+</form><br>
 
 

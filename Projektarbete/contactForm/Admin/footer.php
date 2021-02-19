@@ -3,5 +3,5 @@
  Copyright &copy; Olga Domorod & Jovana Hurra <?php echo date('Y'); ?>
  </footer>
  
-    </body>
+</body>
 </html>
